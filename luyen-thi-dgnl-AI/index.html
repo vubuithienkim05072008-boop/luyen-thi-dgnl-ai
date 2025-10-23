@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Thi Đánh Giá Năng Lực - AI Hỗ Trợ</title>
+    <!-- Kết nối với thư viện Tailwind CSS để trang trí đẹp -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Kết nối với Font Awesome để có icon đẹp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Kết nối với file CSS của chúng ta -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Trang chủ -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="max-w-4xl w-full mx-auto text-center">
+            <!-- Phần tiêu đề -->
+            <div class="mb-8">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Hệ Thống Luyện Thi Đánh Giá Năng Lực</h1>
+                <p class="text-xl text-gray-600">Tích hợp AI để nhận xét và đưa ra lộ trình học tập cá nhân hóa</p>
+            </div>
+            
+            <!-- Hai ô lựa chọn kỳ thi -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Ô VSAT -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-24 h-24 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-brain text-blue-500 text-4xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">VSAT</h2>
+                    <p class="text-gray-600 mb-6">Luyện thi kỳ thi Đánh giá năng lực của Đại học Cần Thơ và nhóm trường Đại học đồng tổ chức</p>
+                    <a href="exam-list.html?type=VSAT" class="block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 w-full text-center">
+                        Chọn kỳ thi
+                    </a>
+                </div>
+                
+                <!-- Ô V-ACT -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-24 h-24 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-green-500 text-4xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">V-ACT</h2>
+                    <p class="text-gray-600 mb-6">Luyện thi kỳ thi Đánh giá năng lực của Đại học Quốc gia TP.HCM</p>
+                    <a href="exam-list.html?type=V-ACT" class="block bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 w-full text-center">
+                        Chọn kỳ thi
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Phần tính năng nổi bật -->
+            <div class="mt-16 text-center">
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Tính năng nổi bật</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-robot text-purple-500 text-xl mr-2"></i>
+                        <span>Nhận xét và đánh giá bằng AI</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-road text-yellow-500 text-xl mr-2"></i>
+                        <span>Lộ trình học tập cá nhân hóa</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-chart-line text-red-500 text-xl mr-2"></i>
+                        <span>Theo dõi tiến độ học tập</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="mt-12 text-center text-gray-500">
+                <p>Chúc các bạn ôn luyện thật hiệu quả và cố gắng để đạt kết quả cao trong kì thi thật nhé</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kết nối với file JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

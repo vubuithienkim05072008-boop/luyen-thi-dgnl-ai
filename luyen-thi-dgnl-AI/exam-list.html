@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách đề thi - Luyện Thi ĐGNL</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen p-6">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header với nút quay lại và thông tin user -->
+            <div class="flex justify-between items-center mb-8">
+                <div>
+                    <a href="index.html" class="text-blue-500 hover:text-blue-700 flex items-center">
+                        <i class="fas fa-arrow-left mr-2"></i> Quay lại trang chủ
+                    </a>
+                    <h1 id="exam-type-title" class="text-3xl font-bold text-gray-800 mt-2">Danh sách đề thi</h1>
+                </div>
+                <div class="bg-white rounded-lg shadow p-4">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-blue-500"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Học Sinh</p>
+                            <p class="text-sm text-gray-500">Đang luyện thi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danh sách các đề thi -->
+            <div id="exam-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Các đề thi sẽ được thêm vào đây bằng JavaScript -->
+                <div class="text-center py-8">
+                    <i class="fas fa-spinner fa-spin text-blue-500 text-2xl mb-2"></i>
+                    <p>Đang tải danh sách đề thi...</p>
+                </div>
+            </div>
+            
+            <!-- Hướng dẫn -->
+            <div class="mt-8 text-center text-gray-500">
+                <p>Chọn một đề thi để bắt đầu luyện tập. Mỗi đề thi có thời gian làm bài khác nhau.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kết nối với file JavaScript -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/exam-list.js"></script>
+</body>
+</html>
